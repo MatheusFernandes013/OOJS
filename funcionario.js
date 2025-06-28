@@ -19,8 +19,6 @@ function Funcionario(nome, cargo, salario) {
     }
     this.aumento = function() {
         const novoSalario = _salario * 1.1;
-
-        
     }
     this.dizCargo = function() {
         console.log(this.cargo);
@@ -33,7 +31,6 @@ function Estagiario(nome) {
     this.aumento = function() {
         const novoSalario = this.getSalario() * 1.07;
         this.setSalario(novoSalario);
-        console.log(this.getSalario());
     }
 }
 const pessoa1 = new Pessoa("João");
@@ -50,3 +47,4 @@ console.log(funcionario1.getSalario());
 
 const estagiario1 = new Estagiario("Pedro");
 estagiario1.aumento();
+console.log(estagiario1.getSalario());
